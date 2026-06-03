@@ -258,7 +258,7 @@ func (a App) checkIPAndUpdateDNS() error {
 				}
 
 				updatedRecsByZone[zone] = append(updatedRecsByZone[zone], libdns.Address{
-					Name: domain,
+					Name: libdns.RelativeName(domain, zone),
 					TTL:  time.Duration(a.TTL),
 					IP:   ip,
 				})
