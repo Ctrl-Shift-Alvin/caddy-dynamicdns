@@ -1,4 +1,4 @@
-module github.com/Ctrl-Shift-Alvin/caddy-dynamicdns
+module github.com/mholt/caddy-dynamicdns
 
 go 1.24
 
